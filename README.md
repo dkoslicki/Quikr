@@ -9,7 +9,7 @@ This repository is a Julia implementation of the Quikr algorithm. For Matlab, Py
 
 ## Requirements ##
 + Mac OS X 10.6.8 or GNU/Linux
-+ 4Gb of RAM minimum. Absolutely neccessary.
++ 4Gb of RAM minimum. Absolutely necessary.
 + gcc that supports OpenMP
 + [dna\_utils](http://github.com/EESI/dna-utils/) must be installed
 
@@ -24,3 +24,6 @@ This repository is a Julia implementation of the Quikr algorithm. For Matlab, Py
 
 ## Installation ##
 After cloning and installing the [dna\_utils](http://github.com/EESI/dna-utils/) repository, just clone this repository. As the code contained herein are Julia scripts, no compilation is necessary.
+
+
+## Usage ##
