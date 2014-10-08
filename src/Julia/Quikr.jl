@@ -1,5 +1,5 @@
 # ==============================================================================
-# Reconstruction.jl
+# Quikr.jl
 #
 # Authors: David Koslicki (david.koslicki@math.oregonstate.edu)
 #
@@ -165,6 +165,10 @@ function parse_commandline()
 			default = 10000
 		"--output_file", "-o"
 			help = "Output text file"
+		"--kmer_count_path", "-k"
+			help = "Full path to the kmer_total_count file obtained from https://github.com/mutantturkey/dna-utils"
+			default = "kmer_total_count"
+			
     end
     return parse_args(s)
 end
@@ -175,9 +179,10 @@ parsed_args = parse_commandline()
 input_file = parsed_args["input_file"]
 lambda = parsed_args["lambda"]
 output_file = parsed_args["output_file"]
+kmer_count_path = parsed_args["kmer_count_path"]
 
 #Form the 6mer counts
-counts = map(x->int(strip(x)),readlines(`kmer_total_count -i $input_file -k 6 -c`));
+counts = map(x->int(strip(x)),readlines(`$kmer_count_path -i $input_file -k 6 -c`));
 
 #normalize the counts
 counts = counts/sum(counts);
