@@ -67,7 +67,7 @@ if training_file == "Quikr"
 	#Write the output to file
 	output_level = 0; #Since we don't have hypothetical organisms
 	ConvertToCAMIOutput(x, "../../data/trainset7_taxonomy.txt", output_level, output_file)
-elseif training_file = "SEK"
+elseif training_file == "SEK"
 	#Read in the training database
 	A = h5read("../../data/trainset7_112011_allseqslongerthan700-SEKTrainingMatrix-bitShift100-windowLength400-N6C.h5","/data");
 	
