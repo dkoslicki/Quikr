@@ -6,7 +6,7 @@
 # Converts a reconstruction to the CAMI output format based on the given taxonomy file
 # ==============================================================================
 
-function ConvertToCAMIOutputFunction(input, taxonomy_file, output_level, output_file)
+function ConvertToCAMIOutput(input, taxonomy_file, output_level, output_file)
 	output_taxonomic_rank = [1:7]
 	sample_ID="SAMPLEID"
 
