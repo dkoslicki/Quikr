@@ -40,7 +40,7 @@ counts = map(x->int(strip(x)),readlines(`kmer_total_count -i $input_file -k 6 -c
 counts = counts/sum(counts);
 
 #Read in the training database
-A = h5read("trainset7_112011N6C.h5","/data");
+A = h5read("../../data/trainset7_112011N6C.h5","/data");
 
 #Form the Aaux
 Aaux = [ones(1,size(A,2)); lambda*A];
