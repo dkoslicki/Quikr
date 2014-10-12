@@ -39,7 +39,7 @@ end
 #Parse the args
 parsed_args = parse_commandline()
 input_file = parsed_args["input_file"]
-lambda = parsed_args["lambda"]
+lambda = int(parsed_args["lambda"])
 output_file = parsed_args["output_file"]
 kmer_count_path = parsed_args["kmer_count_path"]
 training_file = parsed_args["training_file"]
