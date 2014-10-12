@@ -29,7 +29,7 @@ After cloning and installing the [dna\_utils](http://github.com/EESI/dna-utils/)
 The code only works on FASTA files (not FASTQ or any other format).
 Here's an example:
 ```
-julia ARKQuikr.jl -i /path/to/FASTA.fa -o /path/to/Output.tsv 
+julia Quikr.jl -i /path/to/FASTA.fa -o /path/to/Output.tsv 
 ```
 Other options are available, see `julia Quikr.jl -h`.
 
